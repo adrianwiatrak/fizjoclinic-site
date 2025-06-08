@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIZJOCLINIC | Adrian Wiatrak</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #0d0d0d;
+      color: #d4af37;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #d4af37;
+      animation: fadeIn 1s ease-out;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #d4af37;
+      font-size: 1rem;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      text-align: center;
+      padding: 1rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 90%;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      animation: fadeInUp 1s ease-out;
+    }
+    .section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .contact-links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .contact-links a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      background-color: #d4af37;
+      color: #0d0d0d;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .map {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .map iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: none;
+    }
+    .review {
+      background-color: #1a1a1a;
+      border: 1px solid #d4af37;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 700px;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid #d4af37;
+      font-size: 0.9rem;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (min-width: 768px) {
+      .hero h1 { font-size: 3rem; }
+      .hero p { font-size: 1.2rem; }
+      nav a { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FIZJOCLINIC</div>
+    <nav>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Adrian Wiatrak</h1>
+    <p>Fizjoterapeuta i osteopata. Rehabilitacja oparta na wiedzy i sztuce – <em>Arte et Scientia</em>.</p>
+  </section>
+  <section id="o-mnie" class="section">
+    <h2>O mnie</h2>
+    <p>Jestem dyplomowanym fizjoterapeutą i osteopatą z wieloletnim doświadczeniem. Pomagam pacjentom odzyskać sprawność, zmniejszyć ból i wrócić do pełni aktywności życiowej.</p>
+  </section>
+  <section id="uslugi" class="section">
+    <h2>Usługi</h2>
+    <p>Terapia manualna, osteopatia, rehabilitacja ortopedyczna i neurologiczna, profilaktyka urazów sportowych, suche igłowanie i wiele więcej.</p>
+  </section>
+  <section id="cennik" class="section">
+    <h2>Cennik</h2>
+    <p>Wizyta fizjoterapeutyczno-osteopatyczna: <strong>200 zł</strong><br />
+    Czas trwania: 45–60 minut</p>
+  </section>
+  <section id="kontakt" class="section">
+    <h2>Kontakt</h2>
+    <p>Skontaktuj się ze mną telefonicznie lub przez Messenger:</p>
+    <div class="contact-links">
+      <a href="tel:784300540">📞 Zadzwoń: 784 300 540</a>
+      <a href="https://m.me/Fizjoclinic-Fizjoterapia-I-Osteopatia-Adrian-Wiatrak" target="_blank">💬 Messenger</a>
+    </div>
+    <div class="map">
+      <p>Gabinet znajduje się pod adresem: <strong>Monte Cassino 16/5, Szczecin</strong></p>
+      <iframe src="https://www.google.com/maps?q=Monte+Cassino+16%2F5+Szczecin&output=embed"></iframe>
+    </div>
+  </section>
+  <section id="opinie" class="section">
+    <h2>Opinie pacjentów</h2>
+    <div class="review">
+      <p>“Bardzo dobry specjalista. Trafiłam z polecenia. Nie bagatelizował tak jak inni mojego problemu... Po 5 latach udręki znalazłam kogoś kto właściwie zdiagnozował…”<br>
+      <strong>— K.R., 18.09.2021</strong></p>
+    </div>
+    <div class="review">
+      <p>“Bardzo wysoka kultura osobista, bardzo szczegółowy wywiad i holistyczne podejście… Ból przestał już po trzeciej wizycie… uwolnienie od ciągłego napięcia.”<br>
+      <strong>— K.R., 18.09.2021</strong></p>
+    </div>
+    <p style="text-align:center;">
+      <a href="https://www.znanylekarz.pl/adrian-wiatrak" target="_blank" style="color:#d4af37; text-decoration:none;">
+        Zobacz wszystkie opinie na ZnanyLekarz.pl »
+      </a>
+    </p>
+  </section>
+  <footer>
+    &copy; 2025 FIZJOCLINIC Adrian Wiatrak | Arte et Scientia
+  </footer>
+</body>
+</html>
